@@ -8,12 +8,17 @@ function displayInfo (event) {
    var endYearPH = $(this).attr(".ph4");
 }
 
+var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q= " + searchTerm + " ?begin_date= " +
+startYear + " ?end_date= " + endYear + "&api_key=LexfnmIFJ3eXRgWAQPlvogP9hyiEEGfJ"
+
+
+
 
 
 
 
 $.ajax({
-    url: url,
+    url: queryUrl,
     method: 'GET',
 }).then(function (response) {
     console.log(response);
