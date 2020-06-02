@@ -21,7 +21,7 @@ $("#search-articles").on("click", function (event) {
       raySon = JSON.stringify(response);
       console.log(response);
       
-      console.log(response.docs[3].web_url);
+      //console.log(response.docs[3].web_url);
     });
 
 });
