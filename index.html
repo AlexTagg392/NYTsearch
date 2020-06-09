@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<!--Nav Bar/Header-->
+
+<body>
+    <header class="subnav-hero-section">
+        <img src="fi-video.svg" alt="Video Icon">
+        <h1 class="subnav-hero-headline">CineSearch</h1>
+        <ul class="subnav-hero-subnav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Criteria Form -->
+
+    <div class="translucent-form-overlay">
+        <form>
+            <h3>Let's Find a Movie!</h3>
+            <!-- Keyword Search -->
+            <div class="row columns">
+                <label>Search for a movie
+                    <input type="text" id="movie-input" name="keyword" placeholder="Type in movie Title">
+                </label>
+            </div>
+            <!-- Genre Selector -->
+            <div class="row columns">
+                <label>
+                    <label for="movie-genre">Genre</label>
+                    <input type="text" id="movie-genre" placeholder="Type in movie Genre"><br>
+                </label>
+            </div>
+            <!-- Actor/Actress Search -->
+            <div class="row columns">
+                
+                <!-- For TMDB Actor Search -->
+                <label for="movie-search">Search for an Actor/Actress</label>
+                <input type="text" id="movie-search" placeholder="Type in an Actor or Actresses name"><br>
+
+                <!-- How many movie in the Actor Search -->
+                <label for="movie-number">How Many Movies (this is required with the Actor/Actress field)</label>
+                <input type="text" id="movie-number" placeholder="Type in total number of movies"><br>
+            </div>
+            
+
+            <!-- Search Button -->
+            <button type="submit" class="primary button expanded search-button" id="find-movie" value="find">
+                Search
+            </button>
+        </form>
+    </div>
+
+    <div id="movie-view"></div>
+
+    <div id="rating-view"></div>
+
+    <div id="year-view"></div>
+
+    <div id="rotten-view"></div>
+
+    <div id="actor-view"></div>
+
+    <div id="genre-view"></div>
+
+
+    <!-- Footer -->
+    <div class="mobile-bottom-bar">
+        <p class="footer-text">Made with care by a Ray, a Dean, and two Alex's.</p>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
